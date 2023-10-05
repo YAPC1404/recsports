@@ -1,0 +1,132 @@
+<!--Yael Palomo Cardenas-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<link rel="stylesheet" href="estilos.css" type="text/css" />
+		<script src="https://unpkg.com/quagga@0.12.1/dist/quagga.min.js"></script>
+		<script src="script.js"></script>
+		<title>Sala Gamer | Registro</title>
+	</head>
+	<body>
+		<div id="contenedor">
+			<div id="cabecera">
+				<img src="imagenes/recsports_logo.png" alt="logo borregos" class="logo">
+				<!--<img alt="frase motivadora lol" class="frase">-->
+			</div>
+			<div id="cabecera2">
+				<img src="imagenes/logo borregos white.png" alt="logo borregos gaming" class="logo">
+				<!--<img alt="frase motivadora lol" class="frase">-->
+			</div>
+			<div id="avisos">
+				<section class="carousel" aria-label="Gallery">
+	  				<ol class="carousel__viewport">
+	    				<li id="carousel__slide1" tabindex="0" class="carousel__slide">
+	      					<div class="carousel__snapper"></div>
+	        				<a href="#carousel__slide4" class="carousel__prev">Go to last slide</a>
+	        				<a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
+	    				</li>
+	    				<li id="carousel__slide2" tabindex="0" class="carousel__slide">
+	      					<div class="carousel__snapper"></div>
+	      					<a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
+	   						<a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
+	    				</li>
+	   					<li id="carousel__slide3" tabindex="0" class="carousel__slide">
+		      				<div class="carousel__snapper"></div>
+		      				<a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
+		      				<a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
+	    				</li>
+	    				<li id="carousel__slide4" tabindex="0" class="carousel__slide">
+	      					<div class="carousel__snapper"></div>
+		      				<a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a>
+		      				<a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
+	    				</li>
+	  				</ol>
+	  				<aside class="carousel__navigation">
+	    				<ol class="carousel__navigation-list">
+	      					<li class="carousel__navigation-item">
+	        					<a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
+	      					</li>
+	      					<li class="carousel__navigation-item">
+	        					<a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
+	      					</li>
+	      					<li class="carousel__navigation-item">
+	        					<a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
+	      					</li>
+	      					<li class="carousel__navigation-item">
+	        					<a href="#carousel__slide4"	class="carousel__navigation-button">Go to slide 4</a>
+	      					</li>
+	    				</ol>
+	  				</aside>
+				</section>
+			</div>
+
+			<div style="width: 100%; height: 90px; background-color: white; margin-top: -50px;">
+				
+			</div>
+			<div id="formulario">
+				<br><br></b><center>
+					<h2 class="lblInstruccion">Ingresa la matricula del alumno</h2><br><br>
+					<div id="datos_form">
+						<div id="select-equipo-div">
+							<h4 class="lblSelect">Selecciona pc o consola</h4>
+							<select name="equipo" class="combobox">
+								<option value="----">----</option>
+								<option value="PC01">PC01</option>
+								<option value="PC02">PC02</option>
+								<option value="PC03">PC03</option>
+								<option value="PC04">PC04</option>							
+								<option value="PC06">PC06</option>
+								<option value="PC07">PC07</option>
+								<option value="PC08">PC08</option>
+								<option value="PC09">PC09</option>
+								<option value="PC10">PC10</option>
+								<option value="PC11">PC11</option>
+								<option value="PC12">PC12</option>
+								<option value="PC13">PC13</option>
+								<option value="PC14">PC14</option>
+								<option value="PC15">PC15</option>
+								<option value="PC16">PC16</option>
+								<option value="PC17">PC17</option>
+								<option value="PC18">PC18</option>
+								<option value="PC19">PC19</option>
+								<option value="PC20">PC20</option>
+								<option value="SWITCH">SWITCH</option>
+								<option value="XBOX">XBOX</option>
+							</select>
+						</div>	
+						<div id="select-vgame-div">
+							<h4 class="lblvgame">Selecciona un videojuego</h4>
+							<select name="equipo" class="combobox">
+								<option value="----">----</option>
+								<option value="VALORANT">VALORANT</option>
+								<option value="LOL">LOL</option>
+								<option value="FORTNITE">FORTNITE</option>
+								<option value="ROCKET LEAGUE">ROCKET LEAGUE</option>							
+								<option value="OVERWATCH">OVERWATCH</option>
+								<option value="SMASH">SMASH</option>
+								<option value="MARIO KART">MARIO KART</option>
+								<option value="FIFA">FIFA</option>
+								<option value="MADDEN">MADDEN</option>
+								<option value="F1">F1</option>
+								<option value="FORZA">FORZA</option>
+								<option value="OTROS">OTRO</option>
+							</select>
+						</div>
+						<div id="matricula-div">
+							<h4 class="lblvgame">Ingresa matricula</h4>
+							<!--<input type="text" name="matricula" placeholder="matricula" class="txtmatricula" id="resultado">-->
+							<p id="resultado"></p>
+							<button id="button_camara" class="camara_boton"><img class="camara_boton" src="imagenes/camara_icono.png" alt="icono de camara"></button>
+						</div>
+						<div id="camara">
+							<script src="https://unpkg.com/quagga@0.12.1/dist/quagga.min.js"></script>
+    						<script src="script.js"></script>
+						</div>
+					</div>
+				</center>
+			</div>
+		</div>
+		
+	</body>
+</html>
