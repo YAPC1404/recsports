@@ -363,6 +363,10 @@ ol, li {
 		justify-content: center;
 	}
 
+	.carousel {
+		height: 260px;
+	}
+
 	.lblvgame {
 		float: none;
 	}
@@ -411,6 +415,7 @@ ol, li {
 	#avisos {
 		margin-top: 200px;
 		width: 90%;
+		height: 260px;
 	}
 
 	.lblInstruccion {
