@@ -2,8 +2,7 @@ var boton = document.getElementById("button_camara")
 
 boton.onclick = function(e) {
 		/*const $resultados = document.querySelector("#resultado");*/
-		var input_matricula = document.getElementById("matricula_resultado");
-    	input_matricula.value = document.querySelector("#resultado");
+    	var input_matricula = document.querySelector("#matricula_resultado");
 		Quagga.init({
 			inputStream: {
 				constraints: {
@@ -27,6 +26,7 @@ boton.onclick = function(e) {
 		});
 
 		Quagga.onDetected((data) => {
+			input_matricula = document.getElementById("matricula_resultado");
 			input_matricula.value = data.codeResult.code;
 			// Imprimimos todo el data para que puedas depurar
 			console.log(data);
