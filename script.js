@@ -1,7 +1,9 @@
 var boton = document.getElementById("button_camara")
 
 boton.onclick = function(e) {
-		const $resultados = document.querySelector("#resultado");
+		/*const $resultados = document.querySelector("#resultado");*/
+		var input_matricula = document.getElementById("matricula_resultado");
+    	input_matricula.value = document.querySelector("#resultado");
 		Quagga.init({
 			inputStream: {
 				constraints: {
