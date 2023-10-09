@@ -27,7 +27,7 @@ boton.onclick = function(e) {
 		});
 
 		Quagga.onDetected((data) => {
-			$resultados.textContent = data.codeResult.code;
+			input_matricula.value = data.codeResult.code;
 			// Imprimimos todo el data para que puedas depurar
 			console.log(data);
 		});
